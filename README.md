@@ -8,7 +8,7 @@
   <p> Цикломатската комплексност на овој граф е 11. Таа ја добив по бројот на региони во графот. </p>
   
 <h3> Тест случаи за Every Branch </h3>
-  ``` 
+``` 
     @Test
     void exceptionTest(){
         RuntimeException ex;
@@ -39,10 +39,11 @@
     void specialCharacterTest(){
         Assertions.assertEquals(false, SILab2.function(new User("boki", "bokisoftversko", "boki@smthcom"), Collections.emptyList()));
     } 
-  ```
+```
+  
   
 <h3> Тест случаи за Multiple Condition </h3>
-  ``` 
+``` 
     @Test
     void multipleConditionTest(){
         RuntimeException ex;
@@ -61,8 +62,9 @@
         //FFF
         Assertions.assertEquals(false, SILab2.function(new User("boki", "boki_softversko", "boki@smth.com"), Collections.emptyList()));
     }
-  ```
-    
+```
+
+  
 <h3> Објаснување за unit тестовите </h3>
     <p> Во овој проект тестовите се пишувани така да бидат исполнети сите услови. Со assertThrows се фаќа исклучокот, кој потоа се праќа во променливата ex, која е 
       од тип RuntimeException. Истиот исклучок се проверува дали е соодветниот исклучок преку assertTrue. За проверување дали програмата враќа соодветен резултат се 
