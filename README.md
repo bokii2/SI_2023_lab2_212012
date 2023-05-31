@@ -8,7 +8,8 @@
   <p> Цикломатската комплексност на овој граф е 11. Таа ја добив по бројот на региони во графот. </p>
   
 <h3> Тест случаи за Every Branch </h3>
-  <code> @Test
+  <code> 
+    @Test
     void exceptionTest(){
         RuntimeException ex;
         ex = assertThrows(RuntimeException.class, () -> SILab2.function(null, null));
@@ -41,7 +42,8 @@
   </code>
   
 <h3> Тест случаи за Multiple Condition </h3>
-  <code> @Test
+  <code> 
+    @Test
     void multipleConditionTest(){
         RuntimeException ex;
         //TXX
@@ -62,4 +64,8 @@
   </code>
     
 <h3> Објаснување за unit тестовите </h3>
+    <p> Во овој проект тестовите се пишувани така да бидат исполнети сите услови. Со assertThrows се фаќа исклучокот, кој потоа се праќа во променливата ex, која е 
+      од тип RuntimeException. Истиот исклучок се проверува дали е соодветниот исклучок преку assertTrue. За проверување дали програмата враќа соодветен резултат се 
+      користи assertEquals, каде како прв аргумент се прима очекуваниот резултат, а како втор арумент се прима вистинскиот резултат. Multiple Condition служи за проверување 
+      на повеќе услови во еден if услов, доколку истиот има повеќе услови. </p>
     
