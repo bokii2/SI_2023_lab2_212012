@@ -1,14 +1,17 @@
 <h1> Втора лабораториска вежба по Софтверско инженерство </h1>
 <h2> Бојан Поповски, 212012 </h2>
-<h3> Control Flow Graph <h3>
+<h2> Control Flow Graph <h2>
   
   ![image](https://github.com/bokii2/SI_2023_lab2_212012/assets/109042385/da09087d-c045-48c6-afe1-23afa8d9ba27)
 
-<h3> Цикломатска комплексност </h3>
+<h2> Цикломатска комплексност </h2>
   <p> Цикломатската комплексност на овој граф е 11. Таа ја добив по бројот на региони во графот. </p>
   
-<h3> Тест случаи за Every Branch </h3>
-``` 
+<h2> Тест случаи за Every Branch </h2>
+
+  ![image](https://github.com/bokii2/SI_2023_lab2_212012/assets/109042385/e5bbe68a-5175-43bc-8dee-fd815828c184)
+
+  
     @Test
     void exceptionTest(){
         RuntimeException ex;
@@ -39,11 +42,11 @@
     void specialCharacterTest(){
         Assertions.assertEquals(false, SILab2.function(new User("boki", "bokisoftversko", "boki@smthcom"), Collections.emptyList()));
     } 
-```
+
   
   
-<h3> Тест случаи за Multiple Condition </h3>
-``` 
+<h2> Тест случаи за Multiple Condition </h2>
+
     @Test
     void multipleConditionTest(){
         RuntimeException ex;
@@ -62,10 +65,8 @@
         //FFF
         Assertions.assertEquals(false, SILab2.function(new User("boki", "boki_softversko", "boki@smth.com"), Collections.emptyList()));
     }
-```
-
   
-<h3> Објаснување за unit тестовите </h3>
+<h2> Објаснување за unit тестовите </h2>
     <p> Во овој проект тестовите се пишувани така да бидат исполнети сите услови. Со assertThrows се фаќа исклучокот, кој потоа се праќа во променливата ex, која е 
       од тип RuntimeException. Истиот исклучок се проверува дали е соодветниот исклучок преку assertTrue. За проверување дали програмата враќа соодветен резултат се 
       користи assertEquals, каде како прв аргумент се прима очекуваниот резултат, а како втор арумент се прима вистинскиот резултат. Multiple Condition служи за проверување 
