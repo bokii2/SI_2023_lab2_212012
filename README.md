@@ -4,11 +4,11 @@
   
   ![image](https://github.com/bokii2/SI_2023_lab2_212012/assets/109042385/da09087d-c045-48c6-afe1-23afa8d9ba27)
 
-<h3> Цикломатска комплексност <h3>
+<h3> Цикломатска комплексност </h3>
   <p> Цикломатската комплексност на овој граф е 11. Таа ја добив по бројот на региони во графот. </p>
   
 <h3> Тест случаи за Every Branch </h3>
-  <code> 
+  ``` 
     @Test
     void exceptionTest(){
         RuntimeException ex;
@@ -39,10 +39,10 @@
     void specialCharacterTest(){
         Assertions.assertEquals(false, SILab2.function(new User("boki", "bokisoftversko", "boki@smthcom"), Collections.emptyList()));
     } 
-  </code>
+  ```
   
 <h3> Тест случаи за Multiple Condition </h3>
-  <code> 
+  ``` 
     @Test
     void multipleConditionTest(){
         RuntimeException ex;
@@ -61,7 +61,7 @@
         //FFF
         Assertions.assertEquals(false, SILab2.function(new User("boki", "boki_softversko", "boki@smth.com"), Collections.emptyList()));
     }
-  </code>
+  ```
     
 <h3> Објаснување за unit тестовите </h3>
     <p> Во овој проект тестовите се пишувани така да бидат исполнети сите услови. Со assertThrows се фаќа исклучокот, кој потоа се праќа во променливата ex, која е 
