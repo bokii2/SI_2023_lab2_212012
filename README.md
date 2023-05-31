@@ -8,7 +8,7 @@
   <p> Цикломатската комплексност на овој граф е 11. Таа ја добив по бројот на региони во графот. </p>
   
 <h3> Тест случаи за Every Branch </h3>
-  <p> @Test
+  <code> @Test
     void exceptionTest(){
         RuntimeException ex;
         ex = assertThrows(RuntimeException.class, () -> SILab2.function(null, null));
@@ -38,10 +38,10 @@
     void specialCharacterTest(){
         Assertions.assertEquals(false, SILab2.function(new User("boki", "bokisoftversko", "boki@smthcom"), Collections.emptyList()));
     } 
-  </p>
+  </code>
   
 <h3> Тест случаи за Multiple Condition </h3>
-  <p> @Test
+  <code> @Test
     void multipleConditionTest(){
         RuntimeException ex;
         //TXX
@@ -59,7 +59,7 @@
         //FFF
         Assertions.assertEquals(false, SILab2.function(new User("boki", "boki_softversko", "boki@smth.com"), Collections.emptyList()));
     }
-  </p>
+  </code>
     
 <h3> Објаснување за unit тестовите </h3>
     
